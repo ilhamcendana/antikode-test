@@ -1,0 +1,9 @@
+{
+    "extends": [
+        "next"
+    ],
+    "plugins": [],
+    "rules": {
+        "no-unused-vars": "error"      
+    }
+}
