@@ -1,0 +1,1 @@
+export const colorsEvents = ['text-teal-600', 'text-sky-600', 'text-zinc-600'];
