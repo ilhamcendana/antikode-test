@@ -181,7 +181,7 @@ export default function EventDetailModal({ isOpen = false, onClose, modalSelecte
                                                     timeToInputSet(parsedVal);
                                                 }}
                                                 className="select select-bordered flex-auto">
-                                                {new Array(12).fill(undefined).map((_, i) => <option key={i} disabled={timeFromInput >= i} value={i}>{i}</option>)}
+                                                {new Array(12).fill(undefined).map((_, i) => <option key={i} disabled={timeFromInput >= i && timeFromInputAMPM === 'PM'} value={i + 1}>{i + 1}</option>)}
                                             </select>
                                             <select value={timeToInputAMPM}
                                                 onChange={e => timeToInputAMPMSet(e.target.value)}
